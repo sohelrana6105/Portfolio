@@ -1,0 +1,36 @@
+@import "tailwindcss";
+:root {
+  /* Light mode colors */
+  --bg-primary: #ffffff;
+  --text-primary: #1e293b; /* slate-900 */
+  --text-secondary: #64748b; /* slate-500 */
+  --accent-color: #0ea5e9; /* sky-500 */
+  --button-bg: var(--accent-color);
+  --button-hover-bg: #0284c7; /* sky-700 */
+}
+
+[data-theme="dark"] {
+  /* Dark mode colors */
+  --bg-primary: #0f172a; /* slate-900 */
+  --text-primary: #e0e7ff; /* slate-100 */
+  --text-secondary: #94a3b8; /* slate-400 */
+  --accent-color: #38bdf8; /* sky-400 */
+  --button-bg: var(--accent-color);
+  --button-hover-bg: #0284c7;
+}
+
+/* Use variables throughout the project */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Example for buttons */
+.button {
+  background-color: var(--button-bg);
+  color: white;
+}
+
+.button:hover {
+  background-color: var(--button-hover-bg);
+}
