@@ -25,13 +25,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section
-      className="max-w-xl mx-auto px-6 sm:px-8 py-16"
-      aria-label="Contact Form"
-    >
+    <section className="  " aria-label="Contact Form">
       <motion.form
         onSubmit={handleSubmit}
-        className="flex flex-col space-y-6 bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg"
+        className="flex flex-col space-y-6 p-8 "
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

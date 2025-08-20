@@ -15,7 +15,7 @@ export const projects = [
   {
     id: "project2",
     name: "Hotel Hub",
-    image: "/public/assets/Hotelhub_homepage.png",
+    image: "/assets/Hotelhub_homepage.png",
     brief:
       "Hotel Hub is a modern and user-friendly hotel booking web application that allows users to browse available hotels, view detailed information, and make bookings with ease. It is designed for travelers who want convenient access to accommodations and for hotel owners who wish to manage their listings.",
     techStack: ["React", "Firebase", "Tailwind CSS", "Express"],

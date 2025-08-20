@@ -34,7 +34,11 @@ export default function Navbar() {
               }}
               className="text-xl font-bold text-slate-900"
             >
-              Sohel Rana
+              <img
+                className="h-11 w-11 rounded-full"
+                src="/assets/Sohel_facebook.jpg"
+                alt="Soher rana"
+              />
             </a>
           </div>
 
