@@ -9,11 +9,11 @@ export default function Projects() {
     <div>
       <section
         id="projects"
-        className="px-6 sm:px-10 py-20 max-w-screen-xl mx-auto"
+        className="px-6 sm:px-10 py-20 max-w-screen-xl mx-auto dark:bg-gray-900"
         aria-label="Projects Section"
       >
         <motion.h2
-          className="text-4xl font-extrabold mb-14 text-center text-sky-600 tracking-wide"
+          className="text-4xl font-extrabold mb-12 text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 dark:from-gray-400"
           initial={{ opacity: 0, y: -25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -26,7 +26,7 @@ export default function Projects() {
           {projects.map(({ id, name, image, techStack, liveLink }) => (
             <motion.article
               key={id}
-              className="bg-white dark:bg-gray-900 rounded-xl shadow-xl overflow-hidden flex flex-col p-5"
+              className="bg-white dark:bg-gray-900 dark:border dark:border-gray-700 rounded-xl shadow-xl overflow-hidden flex flex-col p-5"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

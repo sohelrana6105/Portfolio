@@ -12,14 +12,14 @@ import ContactForm from "../componets/ContactForm";
 
 export default function Contact() {
   return (
-    <div className=" ">
+    <div className=" dark:bg-gray-900">
       <section
         id="contact"
-        className="max-w-full mx-auto mb-10 px-7"
+        className="max-w-full mx-auto  px-7"
         aria-label="Contact Section"
       >
         <motion.h2
-          className="text-4xl font-extrabold mb-14 text-center text-sky-600 tracking-wide"
+          className="text-4xl font-extrabold mb-12 text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 dark:from-gray-400"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -28,7 +28,7 @@ export default function Contact() {
           Contact Me
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row justify-between items-center rounded-xl shadow-2xl bg-[var(--bg-primary)] dark:bg-gray-900">
+        <div className="dark:border dark:border-gray-700 flex flex-col md:flex-row justify-between items-center rounded-xl shadow-2xl ">
           {/* lert side */}
           <motion.div
             className="p-10 flex flex-col space-y-8 text-gray-800 dark:text-gray-200"

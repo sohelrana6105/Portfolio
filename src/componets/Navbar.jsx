@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ThemeButton from "./Share/ThemeButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className=" z-30 bg-white/80 backdrop-blur-md shadow-sm">
+    <header className=" z-30 bg-white/80   dark:bg-gray-900 dark:text-gray-200  backdrop-blur-md shadow-sm">
       <div className=" mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
@@ -48,7 +49,8 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
-                className="text-slate-700 hover:text-sky-600 transition"
+                // className="text-slate-700 hover:text-sky-600 transition"
+                className="hover:text-sky-600 dark:hover:text-sky-400 transition"
               >
                 {link.label}
               </button>
@@ -60,7 +62,7 @@ export default function Navbar() {
                 href="https://github.com/sohelrana6105"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-700 hover:text-slate-900"
+                className="text-slate-700 hover:text-slate-900 dark:text-blue-400 dark:hover:text-gray-00"
               >
                 <FaGithub size={18} />
               </a>
@@ -68,11 +70,14 @@ export default function Navbar() {
                 href="https://www.linkedin.com/in/sohel-rana-7aa40a379/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-700 hover:text-slate-900"
+                className="text-slate-700 hover:text-slate-900 dark:text-blue-400"
               >
                 <FaLinkedin size={18} />
               </a>
             </div>
+
+            {/* theme button */}
+            <ThemeButton></ThemeButton>
 
             {/* Resume Button */}
             <a
@@ -85,21 +90,26 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setOpen(!open)}
-              className="p-2 rounded-md text-slate-700 hover:bg-slate-100"
-            >
-              {open ? <FiX size={24} /> : <FiMenu size={24} />}
-            </button>
+          <div className="flex items-center gap-4">
+            {/* theme button */}
+            <ThemeButton></ThemeButton>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setOpen(!open)}
+                className="p-2 rounded-md text-slate-700 hover:bg-slate-100"
+              >
+                {open ? <FiX size={24} /> : <FiMenu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="md:hidden bg-white border-t border-slate-200">
+        <div className="md:hidden dark:bg-gray-800 border-t dark:border-gray-700 border-gray-300 ">
           <div className="px-4 py-3 space-y-2">
             {navLinks.map((link) => (
               <button
@@ -116,7 +126,7 @@ export default function Navbar() {
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-700"
+                className="text-slate-700  dark:text-blue-400"
               >
                 <FaGithub size={20} />
               </a>
@@ -124,7 +134,7 @@ export default function Navbar() {
                 href="https://linkedin.com/in/yourprofile"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-700"
+                className="text-slate-700  dark:text-blue-400"
               >
                 <FaLinkedin size={20} />
               </a>

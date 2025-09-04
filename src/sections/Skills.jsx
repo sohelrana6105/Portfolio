@@ -44,9 +44,12 @@ const badgeVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+    <section
+      id="skills"
+      className="max-w-6xl dark:bg-gray-900 mx-auto px-4 sm:px-6 py-20"
+    >
       <motion.h2
-        className="text-3xl font-bold mb-10 text-center text-sky-600"
+        className="text-4xl font-extrabold mb-12 text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 dark:from-gray-400"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

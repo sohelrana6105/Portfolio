@@ -25,7 +25,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="  " aria-label="Contact Form">
+    <section className="dark:text-gray-200  " aria-label="Contact Form">
       <motion.form
         onSubmit={handleSubmit}
         className="flex flex-col space-y-6 p-8 "

@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* About Section */}
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-sky-400">
+          <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-gray-200">
             About Me
           </h3>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -33,7 +33,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-sky-400">
+          <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-gray-200">
             Quick Links
           </h3>
           <ul className="space-y-3">
@@ -82,16 +82,16 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-sky-400">
+          <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-gray-200">
             Contact Info
           </h3>
           <ul className="space-y-4 text-gray-600 dark:text-gray-400">
             <li className="flex items-center space-x-3">
-              <FaMapMarkerAlt className="text-sky-600 dark:text-sky-400" />
+              <FaMapMarkerAlt className="text-sky-600 dark:text-gray-200" />
               <span>Birgonj, Bangladesh</span>
             </li>
             <li className="flex items-center space-x-3">
-              <FaEnvelope className="text-sky-600 dark:text-sky-400" />
+              <FaEnvelope className="text-sky-600 dark:text-gray-200" />
               <a
                 href="mailto:sohelrana6105@example.com"
                 className="hover:text-sky-600 dark:hover:text-sky-400 transition"
@@ -100,7 +100,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="flex items-center space-x-3">
-              <FaPhone className="text-sky-600 dark:text-sky-400" />
+              <FaPhone className="text-sky-600 dark:text-gray-200" />
               <a
                 href="tel:+8801234567890"
                 className="hover:text-sky-600 dark:hover:text-sky-400 transition"
@@ -111,7 +111,7 @@ export default function Footer() {
           </ul>
 
           {/* Social Icons */}
-          <div className="flex space-x-6 mt-6 text-2xl text-sky-600 dark:text-sky-400">
+          <div className="flex space-x-6 mt-6 text-2xl text-sky-600 dark:text-gray-200">
             <a
               href="https://github.com/sohelrana6105"
               target="_blank"

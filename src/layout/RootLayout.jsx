@@ -5,8 +5,11 @@ import Footer from "../componets/Footer";
 
 export default function RootLayout() {
   return (
-    <div className="max-w-6xl mx-auto">
-      <Navbar />
+    <div className="max-w-6xl mx-auto  ">
+      <header className="sticky top-0 z-50">
+        <Navbar />
+      </header>
+
       <Outlet />
       <Footer />
     </div>

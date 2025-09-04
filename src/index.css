@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   /* Light mode colors */
   --bg-primary: #ffffff;
@@ -20,17 +22,17 @@
 }
 
 /* Use variables throughout the project */
-body {
+/* body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-}
+} */
 
 /* Example for buttons */
-.button {
+/* .button {
   background-color: var(--button-bg);
   color: white;
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-color: var(--button-hover-bg);
-}
+} */
