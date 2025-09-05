@@ -12,10 +12,10 @@ import ContactForm from "../componets/ContactForm";
 
 export default function Contact() {
   return (
-    <div className=" dark:bg-gray-900">
+    <div className="bg-gray-50 dark:bg-gray-900">
       <section
         id="contact"
-        className="max-w-full mx-auto  px-7"
+        className="max-w-7xl mx-auto py-10  px-7 lg:px-0"
         aria-label="Contact Section"
       >
         <motion.h2
@@ -28,7 +28,7 @@ export default function Contact() {
           Contact Me
         </motion.h2>
 
-        <div className="dark:border dark:border-gray-700 flex flex-col md:flex-row justify-between items-center rounded-xl shadow-2xl ">
+        <div className="dark:border dark:border-gray-700 flex flex-col md:flex-row justify-between items-center rounded-xl shadow-sm ">
           {/* lert side */}
           <motion.div
             className="p-10 flex flex-col space-y-8 text-gray-800 dark:text-gray-200"

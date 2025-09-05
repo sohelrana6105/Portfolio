@@ -23,6 +23,20 @@ export const projects = [
     githubLink: "https://github.com/sohelrana6105/HotelHub-client",
     challenges:
       "Integrating Firebase authentication and real-time database syncing.",
+    improvements: "Add social sharing and personalize features.",
+  },
+  {
+    id: "project3",
+    name: "GardenHub",
+    image: "/assets/GardenHub.png",
+    brief:
+      "A platform for gardening tips, profiles, plant management, secure authentication with dynamic content.",
+    techStack: ["React", "Firebase", "Tailwind CSS", "Express"],
+    liveLink: "https://assignment-10-da43e.web.app/",
+    githubLink:
+      "https://github.com/sohelrana6105/MyGardenHub-assignmet-10-client",
+    challenges:
+      "Integrating Firebase authentication and real-time database syncing.",
     improvements: "Add social sharing and personalized gardening reminders.",
   },
 ];

@@ -12,20 +12,21 @@ import {
 export default function Footer() {
   return (
     <motion.footer
-      className="bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-300 pt-16 pb-10"
+      className="bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-10"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+      {/* <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-0 grid grid-cols-1 md:grid-cols-3 gap-12"> */}
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-0 flex items-start justify-between">
         {/* About Section */}
         <div>
           <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-gray-200">
             About Me
           </h3>
-          <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Hi, I’m Sohel Rana, a passionate MERN stack developer focused on
+          <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-72">
+            Hi, I'm Sohel Rana, a passionate MERN stack developer focused on
             creating scalable web applications with excellent user experience.
             Always eager to learn and deliver quality work.
           </p>

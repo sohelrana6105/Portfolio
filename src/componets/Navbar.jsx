@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ThemeButton from "./Share/ThemeButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
+  const [scrolled, setScrolled] = useState(false);
   const navLinks = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
@@ -20,9 +20,38 @@ export default function Navbar() {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  // Detect scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className=" z-30 bg-white/80   dark:bg-gray-900 dark:text-gray-200  backdrop-blur-md shadow-sm">
-      <div className=" mx-auto px-4 sm:px-6">
+    <header
+      className={` z-30 bg-white/80 dark:border-2 dark:border-gray-600  dark:text-gray-200  backdrop-blur-md shadow-sm
+       
+        ${scrolled ? "dark:bg-gray-700" : "dark:bg-gray-900 "}
+        
+        `}
+
+      // className={`
+      //   fixed w-full z-30 backdrop-blur-md transition-colors duration-300
+      //   ${
+      //     scrolled
+      //       ? "bg-white dark:bg-gray-900 dark:border-gray-600 shadow-md"
+      //       : "bg-white/80 dark:bg-gray-900/80 dark:border-2 dark:border-gray-600 shadow-sm"
+      //   }
+      // `}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 dark:border-white">
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <div className="flex items-center">
@@ -90,7 +119,7 @@ export default function Navbar() {
             </a>
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-4">
             {/* theme button */}
             <ThemeButton></ThemeButton>
 

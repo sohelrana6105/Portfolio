@@ -5,7 +5,7 @@ import Footer from "../componets/Footer";
 
 export default function RootLayout() {
   return (
-    <div className="max-w-6xl mx-auto  ">
+    <div className="max-w-[1440px] mx-auto  ">
       <header className="sticky top-0 z-50">
         <Navbar />
       </header>
