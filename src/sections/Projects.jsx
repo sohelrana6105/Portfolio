@@ -6,7 +6,7 @@ import { projects } from "./projectsinfo";
 
 export default function Projects() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <div className="">
       <section
         id="projects"
         className="px-7 lg:px-0 sm:px-7 py-10 max-w-7xl mx-auto scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"

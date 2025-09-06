@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ThemeButton from "./Share/ThemeButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+
   const navLinks = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
@@ -21,26 +20,10 @@ export default function Navbar() {
   };
 
   // Detect scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <header
-      className={` z-30 bg-white/80 dark:border-2 dark:border-gray-600  dark:text-gray-200  backdrop-blur-md shadow-sm
-       
-        ${scrolled ? "dark:bg-gray-700" : "dark:bg-gray-900 "}
-        
-        `}
+      className={`dark:text-gray-200 `}
 
       // className={`
       //   fixed w-full z-30 backdrop-blur-md transition-colors duration-300
@@ -51,7 +34,7 @@ export default function Navbar() {
       //   }
       // `}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 dark:border-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 ">
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <div className="flex items-center">
@@ -89,53 +72,6 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-
-            {/* Social Icons */}
-            {/* <div className="flex items-center space-x-3 ml-4">
-              <a
-                href="https://github.com/sohelrana6105"
-                target="_blank"
-                rel="noreferrer"
-                className="text-slate-700 hover:text-slate-900 dark:text-blue-400 dark:hover:text-gray-00"
-              >
-                <FaGithub size={18} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sohel-rana-7aa40a379/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-slate-700 hover:text-slate-900 dark:text-blue-400"
-              >
-                <FaLinkedin size={18} />
-              </a>
-            </div> */}
-            {/* Social Icons */}
-            <div className="flex items-center space-x-4 ">
-              <a
-                href="https://github.com/sohelrana6105"
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-full text-slate-700 dark:text-blue-400
-               transition-all duration-300 ease-in-out
-               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
-               hover:shadow-lg hover:shadow-indigo-300/50
-               active:scale-95"
-              >
-                <FaGithub size={20} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sohel-rana-7aa40a379/"
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-full text-slate-700 dark:text-blue-400
-               transition-all duration-300 ease-in-out
-               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
-               hover:shadow-lg hover:shadow-indigo-300/50
-               active:scale-95"
-              >
-                <FaLinkedin size={20} />
-              </a>
-            </div>
 
             {/* theme button */}
             <ThemeButton></ThemeButton>
@@ -211,33 +147,6 @@ export default function Navbar() {
             ))}
 
             <div className="flex items-center space-x-4 pt-2">
-              {/* github */}
-              <a
-                href="https://github.com/sohelrana6105"
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-full text-slate-700 dark:text-blue-400
-               transition-all duration-300 ease-in-out
-               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
-               hover:shadow-lg hover:shadow-indigo-300/50
-               active:scale-95"
-              >
-                <FaGithub size={20} />
-              </a>
-              {/* linkdin */}
-              <a
-                href="https://www.linkedin.com/in/sohel-rana-7aa40a379/"
-                target="_blank"
-                rel="noreferrer"
-                className="p-2 rounded-full text-slate-700 dark:text-blue-400
-               transition-all duration-300 ease-in-out
-               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
-               hover:shadow-lg hover:shadow-indigo-300/50
-               active:scale-95"
-              >
-                <FaLinkedin size={20} />
-              </a>
-
               <a
                 href="https://drive.google.com/file/d/150NEF9U1wTMZZsB8ILeXwTf3gbLrXwWw/view?usp=sharing"
                 download

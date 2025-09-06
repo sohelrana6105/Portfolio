@@ -48,7 +48,7 @@ const badgeVariants = {
 
 export default function Skills() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 ">
+    <div className=" ">
       <section
         id="skills"
         className="max-w-7xl mx-auto px-7 sm:px-7 lg:px-0 py-10 scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"

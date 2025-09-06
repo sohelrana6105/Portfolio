@@ -49,22 +49,18 @@ export default function About() {
         transition={{ duration: 0.8, delay: 0.6 }}
       >
         <p className="mb-4">
-          I am <span className="font-bold text-sky-600">Sohel Rana</span>, a
-          dedicated Frontend Developer specializing in building scalable,
-          performant, and accessible web applications. With a solid foundation
-          in HTML, CSS, and JavaScript, I have honed my skills in modern
-          frameworks like React to create intuitive user interfaces that drive
-          engagement and deliver seamless user experiences.
+          I am ohel Rana, a dedicated Frontend Developer specializing in
+          building scalable, performant, and accessible web applications. With a
+          solid foundation in HTML, CSS, and JavaScript, I have honed my skills
+          in modern frameworks like React to create intuitive user interfaces
+          that drive engagement and deliver seamless user experiences.
         </p>
         <p className="mb-4">
-          My expertise includes writing{" "}
-          <span className="text-sky-600 font-semibold">
-            clean, maintainable code
-          </span>{" "}
-          following best practices, optimizing application performance, and
-          collaborating effectively within agile teams. I am passionate about
-          continuously learning emerging technologies and applying them to solve
-          real-world problems.
+          My expertise includes writing clean, maintainable code following best
+          practices, optimizing application performance, and collaborating
+          effectively within agile teams. I am passionate about continuously
+          learning emerging technologies and applying them to solve real-world
+          problems.
         </p>
         <p>
           Outside of development, I engage in creative pursuits like football
