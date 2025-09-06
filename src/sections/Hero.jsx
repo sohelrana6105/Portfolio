@@ -5,15 +5,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
+    <div className="min-h-screen flex items-center justify-center ">
       <section
         id="home"
-        className="max-w-7xl w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-10"
+        className="max-w-7xl w-full mx-auto  px-4 sm:px-6 lg:px-10 xl:px-0   flex flex-col-reverse md:flex-col lg:flex-row lg:items-center justify-center gap-10"
       >
         {/* Text content */}
-        {/* Text content */}
+
         <motion.div
-          className="flex-1 text-center md:text-left"
+          className="flex-1   text-center md:text-left"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -107,7 +107,7 @@ export default function Hero() {
           <img
             src="/assets/Sohel_facebook.jpg"
             alt="Sohel Rana"
-            className="w-56 h-56 sm:w-72 sm:h-72 md:w-[450px] md:h-[450px] rounded-full object-cover shadow-lg"
+            className="w-56 h-56 sm:w-72 sm:h-72 lg:w-[350px] lg:h-[350px]   xl:w-[450px] xl:h-[450px] rounded-full object-cover shadow-lg "
           />
         </motion.div>
       </section>

@@ -51,7 +51,7 @@ export default function Skills() {
     <div className=" ">
       <section
         id="skills"
-        className="max-w-7xl mx-auto px-7 sm:px-7 lg:px-0 py-10 scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"
+        className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-10 xl:px-0  py-10 scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"
       >
         <motion.h2
           className="text-4xl font-extrabold mb-12 text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 dark:from-gray-400"
@@ -63,7 +63,7 @@ export default function Skills() {
           Skills
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-10 ">
+        <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-10 ">
           {skillCategories.map(({ category, skills }) => (
             <motion.div
               key={category}

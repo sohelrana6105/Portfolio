@@ -9,7 +9,7 @@ export default function Projects() {
     <div className="">
       <section
         id="projects"
-        className="px-7 lg:px-0 sm:px-7 py-10 max-w-7xl mx-auto scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-0  py-10  scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"
         aria-label="Projects Section"
       >
         <motion.h2
@@ -27,7 +27,7 @@ export default function Projects() {
             ({ id, name, image, techStack, liveLink, githubLink }) => (
               <motion.article
                 key={id}
-                className="bg-white dark:bg-gray-900 dark:border dark:border-gray-700 rounded-xl shadow-xl overflow-hidden flex flex-col p-5"
+                className="bg-white dark:bg-gray-900 dark:border dark:border-gray-700 rounded-xl shadow-xl overflow-hidden flex flex-col p-3 "
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -86,7 +86,7 @@ export default function Projects() {
                       aria-label={`View details of ${name}`}
                       className="border border-sky-600 text-sky-600 font-semibold rounded-lg shadow-md hover:bg-sky-600 hover:text-white transition px-4 py-2 flex items-center justify-center space-x-2"
                     >
-                      <span className="text-sm">View Details</span>
+                      <span className="text-sm"> Details</span>
                       <FaExternalLinkAlt />
                     </a>
                   </div>

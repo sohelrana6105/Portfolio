@@ -13,7 +13,7 @@ import ContactForm from "../componets/ContactForm";
 export default function Contact() {
   return (
     <div id="contact" className=" scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24">
-      <section className="max-w-7xl mx-auto py-10  px-7 lg:px-0 ">
+      <section className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-10 xl:px-0  py-10   ">
         <motion.h2
           className="text-4xl font-extrabold mb-12 text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 dark:from-gray-400"
           initial={{ opacity: 0, y: -30 }}

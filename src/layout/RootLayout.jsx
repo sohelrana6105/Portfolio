@@ -27,16 +27,16 @@ export default function RootLayout() {
           scrolled ? "dark:bg-gray-700" : "dark:bg-gray-900"
         }`}
       >
-        <div className="max-w-[1920px] mx-auto px-4">
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-0">
           <Navbar scrolled={scrolled} />
         </div>
       </header>
 
-      <main className="max-w-[1920px] mx-auto px-4">
+      <main className="max-w-[1920px] mx-auto ">
         <Outlet />
       </main>
 
-      <footer className="max-w-[1920px] mx-auto px-4">
+      <footer className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-7 xl:px-0">
         <Footer />
       </footer>
     </div>
