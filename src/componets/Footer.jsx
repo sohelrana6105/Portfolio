@@ -19,7 +19,7 @@ export default function Footer() {
       transition={{ duration: 1 }}
     >
       {/* <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-0 grid grid-cols-1 md:grid-cols-3 gap-12"> */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-0 flex items-start justify-between">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-0 flex flex-col gap-5 sm:gap-0 md:flex-row items-start justify-between">
         {/* About Section */}
         <div>
           <h3 className="text-xl font-semibold mb-4 text-sky-700 dark:text-gray-200">

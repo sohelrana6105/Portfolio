@@ -9,7 +9,7 @@ export default function Projects() {
     <div className="bg-gray-50 dark:bg-gray-900">
       <section
         id="projects"
-        className="px-6 lg:px-0 sm:px-10 py-10 max-w-7xl mx-auto"
+        className="px-7 lg:px-0 sm:px-7 py-10 max-w-7xl mx-auto"
         aria-label="Projects Section"
       >
         <motion.h2
