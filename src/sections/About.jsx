@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-gray-50 dark:bg-gray-900  px-7 sm:px-7 py-10"
+      className="bg-gray-50 dark:bg-gray-900  px-7 sm:px-7 py-10   scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"
     >
       <motion.h2
         className="text-4xl font-extrabold mb-12 text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600 dark:from-gray-400"

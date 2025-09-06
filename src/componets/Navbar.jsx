@@ -62,7 +62,7 @@ export default function Navbar() {
                 e.preventDefault();
                 handleNavClick("home");
               }}
-              className="text-xl font-bold text-slate-900"
+              className="text-xl font-bold text-slate-900  "
             >
               <img
                 className="h-11 w-11 rounded-full"
@@ -73,20 +73,25 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 // className="text-slate-700 hover:text-sky-600 transition"
-                className="hover:text-sky-600 dark:hover:text-sky-400 transition"
+                // className="hover:text-sky-600 dark:hover:text-sky-400 transition hover:bg-gray-900 hover:btn"
+                className="relative px-4 py-2 text-slate-700 dark:text-slate-200 font-medium rounded-xl
+                 transition-all duration-300 ease-in-out
+                 hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+                 hover:shadow-lg hover:shadow-indigo-300/50
+                 active:scale-95"
               >
                 {link.label}
               </button>
             ))}
 
             {/* Social Icons */}
-            <div className="flex items-center space-x-3 ml-4">
+            {/* <div className="flex items-center space-x-3 ml-4">
               <a
                 href="https://github.com/sohelrana6105"
                 target="_blank"
@@ -103,6 +108,33 @@ export default function Navbar() {
               >
                 <FaLinkedin size={18} />
               </a>
+            </div> */}
+            {/* Social Icons */}
+            <div className="flex items-center space-x-4 ">
+              <a
+                href="https://github.com/sohelrana6105"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded-full text-slate-700 dark:text-blue-400
+               transition-all duration-300 ease-in-out
+               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+               hover:shadow-lg hover:shadow-indigo-300/50
+               active:scale-95"
+              >
+                <FaGithub size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sohel-rana-7aa40a379/"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded-full text-slate-700 dark:text-blue-400
+               transition-all duration-300 ease-in-out
+               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+               hover:shadow-lg hover:shadow-indigo-300/50
+               active:scale-95"
+              >
+                <FaLinkedin size={20} />
+              </a>
             </div>
 
             {/* theme button */}
@@ -112,19 +144,23 @@ export default function Navbar() {
             <a
               href="https://drive.google.com/file/d/150NEF9U1wTMZZsB8ILeXwTf3gbLrXwWw/view?usp=sharing"
               download
-              className="ml-4 px-4 py-2 border border-slate-300 rounded-md text-sm hover:bg-sky-50"
+              // className="ml-4 px-4 py-2 border border-slate-300 rounded-md text-sm hover:bg-sky-50"
+              className="ml-auto px-3 py-2 border border-slate-500 rounded text-sm 
+                transition-all duration-300 ease-in-out  hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500  hover:shadow-lg hover:shadow-indigo-300/50
+                active:scale-95
+                "
               target="_balnk"
             >
               Resume
             </a>
           </nav>
 
-          <div className="md:hidden flex items-center gap-4">
+          <div className="lg:hidden flex items-center gap-4">
             {/* theme button */}
             <ThemeButton></ThemeButton>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden ">
+            <div>
               <button
                 onClick={() => setOpen(!open)}
                 className="p-2 rounded-md text-slate-700 "
@@ -148,40 +184,73 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="md:hidden dark:bg-gray-800 border-t dark:border-gray-700 border-gray-300 shadow-2xl">
+        <div className="lg:hidden dark:bg-gray-800 border-t dark:border-gray-700 border-gray-300 shadow-2xl">
           <div className="px-4 py-3 space-y-2 ">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => handleNavClick(link.id)}
-                className="block w-full text-left px-2 py-2 rounded hover:bg-slate-300  hover:dark:text-gray-700"
-              >
-                {link.label}
-              </button>
+              <div>
+                <button
+                  key={link.id}
+                  onClick={() => handleNavClick(link.id)}
+                  // className="block w-full text-left px-2 py-2 rounded hover:bg-slate-300  hover:dark:text-gray-700"
+
+                  //   className=" px-4 py-2 text-slate-700 dark:text-slate-200 font-medium rounded-xl
+                  //  transition-all duration-300 ease-in-out
+                  //  hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+                  //  hover:shadow-lg hover:shadow-indigo-300/50
+                  //  active:scale-95"
+
+                  className="w-full text-left px-4 py-2 text-slate-700 dark:text-slate-200 font-medium rounded-xl
+           transition-all duration-300 ease-in-out
+           hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+           hover:shadow-lg hover:shadow-indigo-300/50
+           active:scale-95"
+                >
+                  {link.label}
+                </button>
+              </div>
             ))}
 
             <div className="flex items-center space-x-4 pt-2">
+              {/* github */}
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/sohelrana6105"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-700  dark:text-blue-400"
+                className="p-2 rounded-full text-slate-700 dark:text-blue-400
+               transition-all duration-300 ease-in-out
+               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+               hover:shadow-lg hover:shadow-indigo-300/50
+               active:scale-95"
               >
                 <FaGithub size={20} />
               </a>
+              {/* linkdin */}
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/sohel-rana-7aa40a379/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-700  dark:text-blue-400"
+                className="p-2 rounded-full text-slate-700 dark:text-blue-400
+               transition-all duration-300 ease-in-out
+               hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+               hover:shadow-lg hover:shadow-indigo-300/50
+               active:scale-95"
               >
                 <FaLinkedin size={20} />
               </a>
 
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/150NEF9U1wTMZZsB8ILeXwTf3gbLrXwWw/view?usp=sharing"
                 download
-                className="ml-auto px-3 py-2 border border-slate-300 rounded text-sm"
+                className="ml-auto px-3 py-2 border border-slate-500 rounded text-sm 
+                transition-all duration-300 ease-in-out  hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500  hover:shadow-lg hover:shadow-indigo-300/50
+                active:scale-95
+                "
+
+                //     className="w-full text-center px-4 py-2 text-slate-700 dark:text-slate-200 font-medium rounded-xl
+                //  transition-all duration-300 ease-in-out
+                //  hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500
+                //  hover:shadow-lg hover:shadow-indigo-300/50
+                //  active:scale-95"
               >
                 Resume
               </a>

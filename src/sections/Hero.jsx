@@ -8,7 +8,7 @@ export default function Hero() {
       <section
         id="home"
         // className="dark:bg-gray-900 max-w-7xl flex flex-col md:flex-row items-center justify-center  lg:justify-end px-4 sm:px-0 py-10 "
-        className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between px-7 sm:px-7 lg:px-0 py-10 "
+        className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between px-7 sm:px-7 lg:px-0 py-10  scroll-mt-96 md:scroll-mt-96 lg:scroll-mt-24"
       >
         {/* Text content */}
         <motion.div
