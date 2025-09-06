@@ -124,12 +124,22 @@ export default function Navbar() {
             <ThemeButton></ThemeButton>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden ">
               <button
                 onClick={() => setOpen(!open)}
-                className="p-2 rounded-md text-slate-700 hover:bg-slate-100"
+                className="p-2 rounded-md text-slate-700 "
               >
-                {open ? <FiX size={24} /> : <FiMenu size={24} />}
+                {open ? (
+                  <FiX
+                    className="text-slate-400 hover:text-slate-100"
+                    size={24}
+                  />
+                ) : (
+                  <FiMenu
+                    className=" text-slate-400 hover:text-slate-100"
+                    size={24}
+                  />
+                )}
               </button>
             </div>
           </div>
@@ -138,13 +148,13 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="md:hidden dark:bg-gray-800 border-t dark:border-gray-700 border-gray-300 ">
-          <div className="px-4 py-3 space-y-2">
+        <div className="md:hidden dark:bg-gray-800 border-t dark:border-gray-700 border-gray-300 shadow-2xl">
+          <div className="px-4 py-3 space-y-2 ">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
-                className="block w-full text-left px-2 py-2 rounded hover:bg-slate-100"
+                className="block w-full text-left px-2 py-2 rounded hover:bg-slate-300  hover:dark:text-gray-700"
               >
                 {link.label}
               </button>
