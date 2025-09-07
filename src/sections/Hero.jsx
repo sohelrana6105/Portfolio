@@ -22,7 +22,7 @@ export default function Hero() {
             Hello, I'm <span className="text-sky-600">Sohel Rana</span>
           </h1>
 
-          <h2 className="text-4xl sm:text-5xl font-semibold mb-6 h-12 text-sky-600">
+          <h2 className="text-4xl md:text-4xl font-semibold mb-6 text-sky-600">
             <Typewriter
               words={[
                 "Frontend Developer",
@@ -71,7 +71,7 @@ export default function Hero() {
             >
               <FaLinkedin size={20} />
             </a>
-            <a
+            {/* <a
               href="#about"
               rel="noreferrer"
               className="px-3 py-2 border dark:text-white border-slate-500 rounded text-sm 
@@ -80,26 +80,39 @@ export default function Hero() {
                 "
             >
               About me
-            </a>
+            </a> */}
           </div>
 
-          <a
-            href="https://drive.google.com/file/d/150NEF9U1wTMZZsB8ILeXwTf3gbLrXwWw/view?usp=sharing"
-            download
-            // className="inline-block bg-sky-600 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-sky-700 transition"
-            className="inline-block font-medium px-6 py-3 dark:text-white  shadow-md border border-slate-500 rounded text-sm 
+          <div className="flex items-center gap-3">
+            <a
+              href="https://drive.google.com/file/d/150NEF9U1wTMZZsB8ILeXwTf3gbLrXwWw/view?usp=sharing"
+              download
+              // className="inline-block bg-sky-600 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-sky-700 transition"
+              className="inline-block font-medium px-6 py-3 dark:text-white  shadow-md border border-slate-500 rounded text-sm 
                 transition-all duration-300 ease-in-out  hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500  hover:shadow-lg hover:shadow-indigo-300/50
                 active:scale-95"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Download Resume
-          </a>
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download Resume
+            </a>
+
+            <a
+              href="#about"
+              rel="noreferrer"
+              className="px-6 py-3 border dark:text-white border-slate-500 rounded text-sm 
+                transition-all duration-300 ease-in-out  hover:text-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-sky-500  hover:shadow-lg hover:shadow-indigo-300/50
+                active:scale-95
+                "
+            >
+              About me
+            </a>
+          </div>
         </motion.div>
 
         {/* Photo */}
         <motion.div
-          className="flex-1 flex justify-center"
+          className="flex-1 flex justify-center lg:justify-end "
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -107,7 +120,7 @@ export default function Hero() {
           <img
             src="/assets/Sohel_facebook.jpg"
             alt="Sohel Rana"
-            className="w-56 h-56 sm:w-72 sm:h-72 lg:w-[350px] lg:h-[350px]   xl:w-[450px] xl:h-[450px] rounded-full object-cover shadow-lg "
+            className="w-56 h-56 sm:w-72 sm:h-72 lg:w-[350px] lg:h-[350px]   xl:w-[450px] xl:h-[450px] rounded-full object-cover shadow-lg border-3 border-gray-500/35"
           />
         </motion.div>
       </section>

@@ -24,7 +24,7 @@ export default function Contact() {
           Contact Me
         </motion.h2>
 
-        <div className="dark:border dark:border-gray-700 flex flex-col md:flex-row justify-between items-center rounded-xl shadow-sm ">
+        <div className="dark:border dark:border-gray-700 flex flex-col md:flex-row justify-between items-center rounded-xl shadow-xl ">
           {/* lert side */}
           <motion.div
             className="p-10 flex flex-col space-y-8 text-gray-800 dark:text-gray-200"
